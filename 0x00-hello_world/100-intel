@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -S -masm=100-intel $CFILE
+gcc -S -masm=intel $CFILE -o "$
+{CFILE%.*}.s"
