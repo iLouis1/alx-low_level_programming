@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_sign - function that prints signs
  *
@@ -8,7 +7,6 @@
  *
  * Return; 1, 0 and -1
  */
-
 
 
 int print_sign(int n)
