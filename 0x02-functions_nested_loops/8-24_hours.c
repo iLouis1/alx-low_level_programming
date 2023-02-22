@@ -1,26 +1,28 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * jack_bauer - prints 24hrs time
- *
- * Return: always 0
- */
-
+  * jack_bauer - prints 24hours of the day
+  *
+  * Retrun: void
+  */
 void jack_bauer(void)
 {
-	int i;
-	int j;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0 ; i < 24 ; i++)
+	while (i <= 23)
 	{
-		for (j = 0 ; j < 60 ; j++)
+		while (j <= 59)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
-			_putchar(':');
-			_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-			_putchar('\n');
+			putchar((i / 10) + 48);
+			putchar((i % 10) + 48);
+			putchar(':');
+			putchar((j / 10) + 48);
+			putchar((j % 10) + 48);
+			putchar('\n');
+			j++;
 		}
+		j = 0;
+		i++;
 	}
 }
