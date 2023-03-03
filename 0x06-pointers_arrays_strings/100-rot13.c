@@ -1,29 +1,28 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * rot13 - encoder rot13
- * @s: pointer to string
- * Return: *s
+ * rot13 - change letters to ROT13.
+ * @s: analized string.
+ *
+ * Return: String with all letters in ROT13 base.
  */
-
 char *rot13(char *s)
-
 {
-	int i;
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i = 0;
 	int j;
-	char data1[] = "ABCDEFGHJIKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] =
-		"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	for (i = 0; s[i] != '\0'; i++)
+
+	while (*(s + i) != '\0')
 	{
-		for (j = 0; j < s2; j++)
+		for (j = 0; j <= 51; j++)
 		{
-			if (s[i] == data1[j])
+			if (*(s + i) == a[j])
 			{
-				s[i] = datarot[j];
+				*(s + i) = rot[j];
 				break;
 			}
 		}
+		i++;
 	}
 	return (s);
 }
