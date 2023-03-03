@@ -14,14 +14,14 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		putchar ('-');
+		_putchar('-');
 		num = n * -1;
 	}
 	else
 		num = n;
 	if (num <= 9)
 	{
-		putchar (num + '0');
+		_putchar(num + '0');
 	return;
 	}
 	print_number(num / 10);
