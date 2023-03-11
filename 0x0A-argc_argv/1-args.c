@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main _ This prints the number of args
+ * main - This prints the number of args
  * @argc: argument count
  * @argv: argument vector
  *
