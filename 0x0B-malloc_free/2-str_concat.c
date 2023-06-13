@@ -36,10 +36,10 @@ char *str_concat(char *s1, char *s2)
 
 	while (k < l)
 	{
-		if (k <= i)
+		if (k <= a)
 			s[k] = s1[k];
 
-		if (k >= i)
+		if (k >= a)
 		{
 			s[k] = s2[b];
 			b++;
