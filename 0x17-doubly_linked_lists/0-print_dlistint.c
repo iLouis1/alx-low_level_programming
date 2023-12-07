@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - This will print all the elemennt 
+ * print_dlistint - This will print all the elemennt
  * of a dlistint_t list
  *
  * @h: This is the head of the list
@@ -11,7 +11,9 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	int count;
+
 	count = 0;
+
 	if (h == NULL)
 		return (count);
 
